@@ -24,7 +24,7 @@ import java.util.{Currency,Locale}
   
 object PaypalRules extends Factory {
     
-  def init {
+  def init =  {
     ResourceServer.allow {
       case "paypal" :: _ :: Nil => true
     }

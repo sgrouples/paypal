@@ -277,7 +277,7 @@ private object StreamResponseProcessor {
     val ret: ListBuffer[String] = new ListBuffer
 
     try {
-      def doRead {
+      def doRead:Unit = {
         reader.readLine() match {
           case null => ()
           case line =>
